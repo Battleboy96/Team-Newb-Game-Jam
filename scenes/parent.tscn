@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://bj3lwog0gv4tp"]
 
-[ext_resource type="Texture2D" uid="uid://d2ncwkne3cqad" path="res://assets/star.png" id="1_mcqwg"]
+[ext_resource type="Texture2D" uid="uid://ka38w34etdno" path="res://assets/planet.png" id="1_i2nia"]
 [ext_resource type="Script" uid="uid://bkoxi30jundwi" path="res://scenes/parent.gd" id="2_i2nia"]
 
 [node name="Parent Body" type="Sprite2D" unique_id=1307147008]
 texture_filter = 1
-scale = Vector2(8, 8)
-texture = ExtResource("1_mcqwg")
+position = Vector2(961, 547.00006)
+scale = Vector2(0.22256306, 0.22256312)
+texture = ExtResource("1_i2nia")
 script = ExtResource("2_i2nia")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1342606241]
