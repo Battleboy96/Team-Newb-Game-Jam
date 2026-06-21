@@ -6,13 +6,30 @@
 
 [node name="level" type="Node2D" unique_id=90415027]
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1271903618]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1639848757]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Velocity: "
+
+[node name="Line" type="Line2D" parent="." unique_id=1505893276]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.43529412)
+points = PackedVector2Array(0, 0, 0, 0)
+width = 5.0
+
 [node name="Planet" parent="." unique_id=1307147008 instance=ExtResource("1_2q6dc")]
 unique_name_in_owner = true
-position = Vector2(959.8749, 544.1279)
-scale = Vector2(0.14059323, 0.14059322)
 mass = 100
 
 [node name="Satellite" parent="." unique_id=7377556 instance=ExtResource("2_w7c3h")]
-position = Vector2(1303, 704)
+position = Vector2(523, 217)
 motion_mode = 1
 script = ExtResource("3_w8frs")
+
+[node name="Camera2D" type="Camera2D" parent="Satellite" unique_id=1788520458]
+zoom = Vector2(0.5, 0.5)
+process_callback = 0
+position_smoothing_enabled = true

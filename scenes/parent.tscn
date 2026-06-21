@@ -5,9 +5,6 @@
 
 [node name="Parent Body" type="Sprite2D" unique_id=1307147008]
 texture_filter = 1
-position = Vector2(961, 547.00006)
-scale = Vector2(0.22256306, 0.22256312)
+scale = Vector2(0.217, 0.217)
 texture = ExtResource("1_i2nia")
 script = ExtResource("2_i2nia")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1342606241]
