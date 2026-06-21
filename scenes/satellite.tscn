@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://n1v5lx8lmsim"]
 
-[ext_resource type="Texture2D" uid="uid://cwdsgfvmredd" path="res://assets/planet.png" id="1_icwpa"]
-[ext_resource type="Script" uid="uid://c6ko34tf27vys" path="res://scenes/satellite_old.gd" id="2_x51yp"]
+[ext_resource type="Texture2D" uid="uid://cylb7u6t2gclg" path="res://assets/satellite.png" id="2_icwpa"]
+[ext_resource type="Script" uid="uid://coloubt0fyd10" path="res://scenes/satellite.gd" id="2_x51yp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_my2c7"]
 radius = 40.0
@@ -9,10 +9,10 @@ radius = 40.0
 [node name="Satellite" type="CharacterBody2D" unique_id=7377556]
 script = ExtResource("2_x51yp")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287300089]
-texture_filter = 1
-scale = Vector2(5, 5)
-texture = ExtResource("1_icwpa")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=512761655]
 shape = SubResource("CircleShape2D_my2c7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=287300089]
+texture_filter = 1
+scale = Vector2(0.05628458, 0.056284584)
+texture = ExtResource("2_icwpa")

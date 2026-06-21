@@ -5,13 +5,12 @@
 
 [node name="level" type="Node2D" unique_id=90415027]
 
-[node name="Parent Body" parent="." unique_id=1307147008 instance=ExtResource("1_2q6dc")]
-position = Vector2(0, 1)
+[node name="Planet" parent="." unique_id=1307147008 instance=ExtResource("1_2q6dc")]
+unique_name_in_owner = true
+position = Vector2(959.8749, 544.1279)
+scale = Vector2(0.14059323, 0.14059322)
 mass = 100
 
 [node name="Satellite" parent="." unique_id=7377556 instance=ExtResource("2_w7c3h")]
-position = Vector2(294, 197)
-mass = 10.0
-motion = Vector2(0, 0)
-e = 0.0
-w = 0.0
+position = Vector2(1303, 704)
+motion_mode = 1
