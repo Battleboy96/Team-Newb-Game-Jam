@@ -39,3 +39,5 @@ func prediction_problem(delta: float):
 	var r: float = rel_pos.length() # current radius from parent
 	var cosE: float = (1 - (r * al)) / e
 	var sinE: float = (rel_pos.dot(velocity)) / sqrt(mu * (1/al))
+	var x: float = sqrt(mu) * al # * time since periapsis
+	var z: float = x**2 * al
