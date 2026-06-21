@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d0222mr0q4oek"]
+
+[ext_resource type="PackedScene" uid="uid://bj3lwog0gv4tp" path="res://scenes/parent.tscn" id="1_2q6dc"]
+[ext_resource type="PackedScene" uid="uid://n1v5lx8lmsim" path="res://scenes/satellite.tscn" id="2_w7c3h"]
+
+[node name="level" type="Node2D" unique_id=90415027]
+
+[node name="Parent Body" parent="." unique_id=1307147008 instance=ExtResource("1_2q6dc")]
+position = Vector2(0, 1)
+mass = 100
+
+[node name="Satellite" parent="." unique_id=7377556 instance=ExtResource("2_w7c3h")]
+position = Vector2(294, 197)
+mass = 10.0
+motion = Vector2(0, 0)
+e = 0.0
+w = 0.0

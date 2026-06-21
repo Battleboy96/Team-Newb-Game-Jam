@@ -8,6 +8,11 @@ radius = 40.0
 
 [node name="Satellite" type="CharacterBody2D" unique_id=7377556]
 script = ExtResource("2_x51yp")
+mass = null
+motion = null
+a = null
+e = null
+w = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=287300089]
 texture_filter = 1
